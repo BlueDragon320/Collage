@@ -1,0 +1,125 @@
+<html>
+<head>
+  <title>Student Registration</title>
+  <style>
+    /* General page styling */
+    body {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      font-family: Consolas, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Form container styling */
+    .form-container {
+      background-color: #2e2e2e;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #4a90e2;
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 16px;
+      color: #8fbc8f;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #555;
+      border-radius: 4px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Styling for radio buttons */
+    input[type="radio"] {
+      margin-right: 5px;
+      accent-color: #4a90e2;
+    }
+
+    /* Submit button styling */
+    input[type="submit"] {
+      background-color: #4a90e2;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #357ab7;
+    }
+
+    /* Styling headers */
+    h4 {
+      color: #d1d1d1;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Student Registration Form</h1>
+
+    <label for="firstname">First Name :</label>
+    <input type="text" name="firstname" id="firstname"><br>
+
+    <label for="lastname">Last Name :</label>
+    <input type="text" name="lastname" id="lastname"><br>
+
+    <label for="dob">Date Of Birth :</label>
+    <input type="date" name="dob" id="dob"><br>
+
+    <label for="address">Address :</label>
+    <input type="text" name="address" id="address"><br>
+
+    <label for="phn">Contact No :</label>
+    <input type="text" name="phn" maxlength="10" id="phn"><br>
+
+    <label for="email">Email :</label>
+    <input type="email" name="email" id="email"><br>
+
+    <h4>Select Gender</h4>
+    <input type="radio" name="gender" value="male" id="male" checked>
+    <label for="male">Male</label><br>
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="female">Female</label><br>
+
+    <h4>Courses :</h4>
+    <select name="s1" id="s1">
+      <option>C</option>
+      <option>C++</option>
+      <option>Java</option>
+      <option>PHP</option>
+    </select><br>
+
+    <label for="pin">Pin Code :</label>
+    <input type="text" name="pin" maxlength="6" id="pin"><br>
+
+    <input type="submit" value="Register" onclick="alert('Form Submitted')">
+  </div>
+</body>
+</html>
