@@ -1,0 +1,23 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{   
+    margin: 40px;
+    font-size: 50px;
+    padding: 8px;
+}
+.span1{
+    background-color: aqua;
+    border: 2px solid black;
+}
+.span2{
+    background-color: rgb(26, 208, 50);
+    border: 2px solid black;
+}
+.span3{
+    background-color: rgb(222, 67, 16);
+    border: 2px solid black;
+}
