@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Example</title>
+    <script>
+        function sum(event) {
+            event.preventDefault(); 
+            var input1 = document.f1.data1.value;
+            var input2 = document.f1.data2.value;
+            input1 = parseInt(input1);
+            input2 = parseInt(input2);
+            var result = input1 + input2;
+            alert("Sum is --> " + result);
+        }
+    </script>
+</head>
+<body>
+        <form name="f1">
+            <label>First No:</label>
+            <input type="text" name="data1"><br>
+            <label>Second No:</label>
+            <input type="text" name="data2"><br>
+            <input type="submit" value="Addition" onclick="sum(event)">
+        </form>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Example</title>
+    <style>
+        /* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Styling the form container */
+form[name="f1"] {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Styling the labels */
+label {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Styling the input fields */
+input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Styling the buttons */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Adding spacing between buttons */
+input[type="submit"] + input[type="submit"] {
+    margin-top: 10px;
+}
+
+    </style>
+    <script>
+        function sum() {
+            var input1 = document.f1.data1.value;
+            var input2 = document.f1.data2.value;
+            input1 = parseInt(input1);
+            input2 = parseInt(input2);
+            var result = input1 + input2;
+            alert("Sum is --> " + result);
+        }
+        function sub() {
+            var input1 = document.f1.data1.value;
+            var input2 = document.f1.data2.value;
+            input1 = parseInt(input1);
+            input2 = parseInt(input2);
+            var result = input1 - input2;
+            alert("Sum is --> " + result);
+        }
+        function mult() {
+            var input1 = document.f1.data1.value;
+            var input2 = document.f1.data2.value;
+            input1 = parseInt(input1);
+            input2 = parseInt(input2);
+            var result = input1 * input2;
+            alert("Sum is --> " + result);
+        }
+        function div() {
+            var input1 = document.f1.data1.value;
+            var input2 = document.f1.data2.value;
+            input1 = parseInt(input1);
+            input2 = parseInt(input2);
+            var result = input1 / input2;
+            alert("Sum is --> " + result);
+        }
+    </script>
+</head>
+<body>
+        <form name="f1">
+            <label>First No:</label>
+            <input type="text" name="data1"><br>
+            <label>Second No:</label>
+            <input type="text" name="data2"><br>
+            <input type="submit" value="Addition" onclick="sum()"><br>
+            <input type="submit" value="Subtraction" onclick="sub()"><br>
+            <input type="submit" value="Multiplication" onclick="mult()"><br>
+            <input type="submit" value="Division" onclick="div()">
+        </form>
+</body>
+</html>
