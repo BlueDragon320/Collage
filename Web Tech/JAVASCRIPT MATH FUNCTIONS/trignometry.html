@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+function sinvalue()
+{
+var inputvalue,result;
+inputvalue=f1.inp1.value;
+result=Math.sin(inputvalue);
+document.write("SINE VALUE OF A NO. IS -->"+result+ "<br>");
+result=Math.cos(inputvalue);
+document.write("COS VALUE OF A NO. IS -->"+result+ "<br>");
+result=Math.tan(inputvalue);
+document.write("TAN VALUE OF A NO. IS -->"+result);
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<h1>TRIGNOMETRY FUNCTIONS</h1>
+<br>
+ENTER THE NO.
+<input type="text" name="inp1">
+<br>
+<input type="submit" value="TRIGNOMETRY VALUES" onclick="sinvalue()">
+</form>
+</body>
+</html>

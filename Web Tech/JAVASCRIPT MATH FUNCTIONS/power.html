@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function power()
+{
+var inputvalue1,inputvalue2,result;
+inputvalue1=f1.inp1.value;
+inputvalue2=f1.inp2.value;
+result=Math.pow(inputvalue1,inputvalue2);
+alert("POWER VALUE IS ->"+result);
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<h1>POWER VALUE</h1>
+<br>
+ENTER THE BASE
+<input type="text" name="inp1">
+<br>
+ENTER THE POWER
+<input type="text" name="inp2">
+<br>
+<input type="submit" value="POWER VALUE" 
+onclick="power()">
+</form>
+</body>
+</html>
