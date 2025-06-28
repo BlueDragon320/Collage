@@ -1,0 +1,82 @@
+# 1. List Operations - Product Management
+products = ["Laptop", "Smartphones", "Headphones", "Camera"]
+print("\n--- Product Management (List Operations) ---")
+print("Available Products:", products)
+# Adding a new product
+new_product = input("Enter the name of the new product: ").strip()  # Clean input
+if new_product in products:
+    print(f"{new_product} already exists in the product list.")
+else:
+    products.append(new_product)
+    print("Updated Product List:", products)
+# Removing a product
+remove_product = input("Enter product name to remove: ").strip()  # Clean input
+if remove_product in products:
+    products.remove(remove_product)
+    print(f"{remove_product} removed. Updated List:", products)
+else:
+    print("Product not found.")
+    
+    
+# Sorting products
+products.sort()
+print("Sorted Product List:", products)
+# Total products available
+print("Total products in stock:", len(products))
+# 2. Tuple Operations - Customer Orders
+orders = (
+    (101, "Alice", "Laptop", 1),
+    (102, "Bob", "Smartphone", 2),
+    (103, "Charlie", "Headphones", 1),
+)
+print("\n--- Order Processing (Tuple Operations) ---")
+print("All Orders:", orders)
+# Viewing a specific order
+try:
+    order_index = int(input("Enter order index (0-2) to view details: "))
+    if 0 <= order_index < len(orders):
+        print("Order Details:", orders[order_index])
+        
+        
+        
+        
+        
+        
+        
+    else:
+        print("Invalid Index.")
+except ValueError:
+    print("Please enter a valid numeric index.")
+# 3. Dictionary Operations - Customer Database
+customers = {
+    1001: ("Alice", "alice@example.com", "123 Street, NY"),
+    1002: ("Bob", "bob@example.com", "456 Avenue, LA"),
+    1003: ("Charlie", "charlie@example.com", "789 Road, TX"),
+}
+print("\n--- Customer Database (Dictionary Operations) ---")
+print("Customer Records:", customers)
+# Updating Customer Address
+try:
+    cust_id = int(input("Enter customer ID to update address: "))
+    if cust_id in customers:
+        new_address = input("Enter new address: ").strip()  # Clean input
+
+
+
+        customers[cust_id] = (customers[cust_id][0], customers[cust_id][1], new_address)
+        print(f"Updated Details for Customer {cust_id}:", customers[cust_id])
+    else:
+        print("Customer ID not found.")
+except ValueError:
+    print("Please enter a valid numeric Customer ID.")
+# Removing Inactive Customers
+try:
+    del_cust = int(input("Enter customer ID to remove: "))
+    if del_cust in customers:
+        del customers[del_cust]
+        print(f"Customer {del_cust} removed. Updated Records:", customers)
+    else:
+        print("Customer ID not found.")
+except ValueError:
+    print("Please enter a valid numeric Customer ID.")
+
